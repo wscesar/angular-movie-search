@@ -1,0 +1,6 @@
+<input #gotResponse type="text" (keyup)="search(gotResponse.value)" class="form-control"
+  placeholder="Digite o nome do filme" />
+
+<app-loading *ngIf="loading"></app-loading>
+
+<app-card *ngIf="!loading" [items]="movies"></app-card>

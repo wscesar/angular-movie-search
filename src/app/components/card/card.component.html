@@ -1,0 +1,23 @@
+<div class="card-columns animated fadeIn ">
+
+  <div (click)="showMovie(item)" *ngFor="let item of items" class="card">
+
+    <figure>
+      <img class="card-img-top" [src]="item | movieImage" alt="{{ item.title }}" />
+    </figure>
+
+    <div class="card-body">
+
+      <h2 class="card-title">{{ item.title }}</h2>
+
+      <p class="card-text">
+        <span *ngFor="let movie of item.movies" class="badge badge-pill badge-primary">
+          {{ movie.name }}
+        </span>
+      </p>
+
+    </div>
+
+  </div>
+
+</div>

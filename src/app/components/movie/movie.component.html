@@ -1,0 +1,24 @@
+<app-loading *ngIf="loadingMovie"></app-loading>
+
+<div class="container main-container animated fadeIn fast" *ngIf="!loadingMovie">
+
+  <div class="row">
+
+    <div class="col-md-5">
+      <img [src]="movie | movieImage" [alt]="movie.original_title" class="img-thumbnail img-fluid">
+    </div>
+
+    <div class="col-md-7">
+      <h3>Sinopse</h3>
+      <hr>
+      <p class="text-justify">
+        {{ movie.overview }}
+      </p>
+
+      <p>
+        <b>Nota:</b> {{ movie.vote_average }}
+      </p>
+
+    </div>
+  </div>
+</div>
