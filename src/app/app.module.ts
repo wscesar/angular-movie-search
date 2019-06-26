@@ -12,7 +12,7 @@ import { SearchComponent } from './components/search/search.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
 import { MovieComponent } from './components/movie/movie.component';
 import { CardComponent } from './components/card/card.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
+import { HeaderComponent } from './components/header/header.component';
 import { MovieImagePipe } from './pipes/movie-image.pipe';
 
 @NgModule({
@@ -23,7 +23,7 @@ import { MovieImagePipe } from './pipes/movie-image.pipe';
     LoadingComponent,
     MovieComponent,
     CardComponent,
-    NavbarComponent,
+    HeaderComponent,
     MovieImagePipe
   ],
   imports: [
